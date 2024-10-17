@@ -1,0 +1,84 @@
+//Customers CRUD function
+
+//LOCALHOST
+### Get all customers
+Get http://localhost:3001/customers
+
+
+### Get customers by id
+Get http://localhost:3001/custmers/671058631511e3ac01038c02
+
+
+### Create customers
+Post http://localhost:3001/customers HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "671058631511e3ac01038c02",
+     "firstname": "Trevor",
+    "lastname": "Nest",
+    "email": "nestre@outlook.com",
+    "phone": "+2632457889986",
+    "resident": "12 Bhinya, Hatcliff",
+    "workplace": "Minister of Education",
+    "bank": "FBC",
+    "creditsaleduration": "9 months"
+}
+
+
+### PUT customers
+PUT http://localhost:3001/customers/671058631511e3ac01038c02 HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "671058631511e3ac01038c02",
+    "firstname": "Trevor",
+    "lastname": "Nest",
+    "email": "nestre@outlook.com",
+    "phone": "+2632457889986",
+    "resident": "12 Bhinya, Hatcliff",
+    "workplace": "Minister of Education",
+    "bank": "FBC",
+    "creditsaleduration": "9 months"
+}
+
+### DELETE customers
+DELETE http://localhost:3001/customers/671058631511e3ac01038c02
+
+
+//Product CRUD function
+
+//LOCALHOST
+### Get all product
+Get http://localhost:3001/product
+
+
+### Get customers by id
+Get http://localhost:3001/product/671059be1511e3ac01038c04
+
+
+### Create product
+Post http://localhost:3001/product HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "671059be1511e3ac01038c04",
+    "description": "Samsung TV 52 Inch",
+    "price": "US$3400.00",
+    "warrant": "6 years"
+}
+
+
+### PUT product
+PUT http://localhost:3001/product/671059be1511e3ac01038c04 HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "671059be1511e3ac01038c04",
+    "description": "Samsung TV 52 Inch",
+    "price": "US$3400.00",
+    "warrant": "6 years"
+}
+
+### DELETE product
+DELETE http://localhost:3001/product/671059be1511e3ac01038c04
