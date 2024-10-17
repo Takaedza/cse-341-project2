@@ -15,14 +15,14 @@ content-type: application/json
 
 {
     "_id": "671058631511e3ac01038c02",
-     "firstname": "Trevor",
+    "firstname": "Trevor",
     "lastname": "Nest",
     "email": "nestre@outlook.com",
-    "phone": "+2632457889986",
     "resident": "12 Bhinya, Hatcliff",
     "workplace": "Minister of Education",
     "bank": "FBC",
-    "creditsaleduration": "9 months"
+    "creditsaleduration": "9 months",
+    "phone": "+2632457889986"
 }
 
 
@@ -35,11 +35,11 @@ content-type: application/json
     "firstname": "Trevor",
     "lastname": "Nest",
     "email": "nestre@outlook.com",
-    "phone": "+2632457889986",
     "resident": "12 Bhinya, Hatcliff",
     "workplace": "Minister of Education",
     "bank": "FBC",
-    "creditsaleduration": "9 months"
+    "creditsaleduration": "9 months",
+    "phone": "+2632457889986"
 }
 
 ### DELETE customers
