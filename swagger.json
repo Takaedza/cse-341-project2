@@ -5,10 +5,9 @@
       "description": "Customers",
       "version": "1.0.0"
     },
-    "host": "localhost:3001",
+    "host": "cse-341-project2-fs8d.onrender.com",
     "basePath": "/",
     "schemes": [
-        "http",
       "https"
     ],
     "paths": {
