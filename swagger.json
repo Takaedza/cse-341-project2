@@ -1,0 +1,201 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Customers Api",
+      "description": "Customers",
+      "version": "1.0.0"
+    },
+    "host": "localhost:3001",
+    "basePath": "/",
+    "schemes": [
+        "http",
+      "https"
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "tags": [
+            "Hello World"
+          ],
+          "description": "",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/customers/": {
+        "get": {
+          "tags": [
+            "Customers"
+          ],
+          "description": "",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "Customers"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstname": {
+                    "example": "any"
+                  },
+                  "lastname": {
+                    "example": "any"
+                  },
+                  "email": {
+                    "example": "any"
+                  },
+                  "resident": {
+                    "example": "any"
+                  },
+                  "username": {
+                    "example": "any"
+                  },
+                  "workplace": {
+                    "example": "any"
+                  },
+                  "bank": {
+                    "example": "any"
+                  },
+                  "creditsaleduration": {
+                    "example": "any"
+                  },
+                  "phone": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "No Content"
+            },
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/customers/{id}": {
+        "get": {
+          "tags": [
+            "Customers"
+          ],
+          "description": "",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Customers"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstname": {
+                    "example": "any"
+                  },
+                  "lastname": {
+                    "example": "any"
+                  },
+                  "email": {
+                    "example": "any"
+                  },
+                  "resident": {
+                    "example": "any"
+                  },
+                  "username": {
+                    "example": "any"
+                  },
+                  "workplace": {
+                    "example": "any"
+                  },
+                  "bank": {
+                    "example": "any"
+                  },
+                  "creditsaleduration": {
+                    "example": "any"
+                  },
+                  "phone": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "No Content"
+            },
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "Customers"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "No Content"
+            },
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      }
+    }
+  }
